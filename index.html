@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="card" id="card">
+        <div class="front">
+            <p class="login_word">LOGAR</p>
+            <div class="img-user">
+                <img src="./img/usersImg/user.png" alt="person picture">
+            </div>
+            <!--img-user-->
+            <form method="post" action="">
+                <input type="text" name="username" id="nameSignIn" placeholder="Nome" class="f1" required>
+                <input type="password" name="password" id="passSignIn"  placeholder="Senha" class="f1" required>
+                <button class="f1" name="login" id="loginUser" value="clicked"><a href="">Entar</a></button>
+                <p>Não tem conta? <span onclick="flipBack()">Abra sua conta</span></p>
+            </form>
+        </div>
+        <div class="back">
+            <p class="signup_word">CADASTRAR</p>
+            <form method="post" action="" id="signUp">
+                <input type="text" name="username" id="nameSignUp" placeholder="Nome" class="f1" required>
+                <input type="password" name="password" id="passSignUp" placeholder="Senha" class="f1" required>
+                <div class="bols">
+                    <i class="fa-solid fa-angles-left prev"></i>
+                    <div class="bol-single" id="woman">
+                        <img src="./img/usersImg/homen.png" alt="person picture">
+                    </div>
+                    <!--bol-single-->
+
+                    <div class="bol-single" id="man">
+                        <img src="./img/usersImg/mulher.png" alt="person picture">
+                    </div>
+                    <!--bol-single-->
+                    <i class="fa-solid fa-angles-right next"></i>
+                </div>
+                <!--bols-->
+                <button class="f1" name="signup" id="flipFront" value="clicked">Sign up</button>
+                <p><span onclick="flipFront()">Voltar ao login</span></p>
+            </form>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
